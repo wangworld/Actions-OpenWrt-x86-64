@@ -13,3 +13,6 @@ git clone https://github.com/vernesong/OpenClash package/openclash
 git clone https://github.com/jefferymvp/luci-app-koolproxyR package/koolproxyR
 git clone https://github.com/rufengsuixing/luci-app-adguardhome package/adguardhome
 git clone https://github.com/frainzy1477/luci-app-clash package/clash
+
+./scripts/feeds update -a
+./scripts/feeds install -a
