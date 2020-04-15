@@ -7,6 +7,8 @@
 #=================================================
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.123.2/g' package/base-files/files/bin/config_generate
+# 删除默认密码
+sed -i "/CYXluq4wUazHjmCDBCqXF/d" package/lean/default-settings/files/zzz-default-settings
 # 添加软件包
 git clone https://github.com/Lienol/openwrt-package package/lienol
 git clone https://github.com/vernesong/OpenClash package/openclash
